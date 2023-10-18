@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import WeatherSummary from "./WeatherSummary";
 
 export default function Search() {
     return (
