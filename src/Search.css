@@ -1,0 +1,21 @@
+.Search-bar {
+    border: 1px solid rgb(24, 198, 233);
+    width: 200px;
+    height: 35px;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+::placeholder {
+    font-size: 15px;
+    color: rgb(155, 229, 252);
+}
+.btn {
+    color: blue;
+    margin-left: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: rgb(101, 82, 242);
+    color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

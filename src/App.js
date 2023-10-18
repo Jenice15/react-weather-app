@@ -7,10 +7,11 @@ function App() {
     return (
         <div className="App">
             <div className="Wrapper">
-                <h1 className="header">Weather App</h1>
-                <Search />
-                <WeatherSummary />
-                <WeatherForecast />
+                <div className="container">
+                    <Search />
+                    <WeatherSummary />
+                    <WeatherForecast />
+                </div>
             </div>
             <a href="https://github.com/Jenice15/react-weather-app">
                 Open source code by

@@ -3,67 +3,6 @@
     color: #61dafb;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-.Search-bar {
-    border: 1px solid rgb(24, 198, 233);
-    width: 200px;
-    height: 35px;
-    border-radius: 2px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-::placeholder {
-    font-size: 15px;
-    color: rgb(155, 229, 252);
-}
-.Search-button {
-    color: blue;
-    margin-left: 10px;
-    padding: 7px;
-    border-radius: 2px;
-    border: 1px solid grey;
-    background-color: rgb(101, 82, 242);
-    color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.Current-button {
-    color: blue;
-    margin-left: 10px;
-    padding: 7px;
-    border-radius: 2px;
-    border: 1px solid grey;
-    background-color: #61dafb;
-    color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.Wrapper {
-    width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid rgb(134, 133, 133);
-    background: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 .weather-summary {
     position: relative;
     right: 160px;
@@ -113,17 +52,4 @@
 }
 .row-4 {
     margin-left: 30px;
-}
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
 }
