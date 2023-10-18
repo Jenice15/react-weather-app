@@ -12,6 +12,10 @@ function App() {
                 <WeatherSummary />
                 <WeatherForecast />
             </div>
+            <a href="https://github.com/Jenice15/react-weather-app">
+                Open source code by
+            </a>
+            <span> Jenice Martin</span>
         </div>
     );
 }
