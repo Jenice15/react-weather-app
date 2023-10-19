@@ -1,55 +1,46 @@
+:root {
+    --primary-color: azure;
+}
 .App {
     text-align: center;
-    color: #61dafb;
+    color: var(--primary-color);
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/262/original/React_weather_background.jpg?1697674372");
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: scroll; */
 }
-
-.weather-summary {
+.card {
     position: relative;
-    right: 160px;
-    top: 15px;
-    color: #61dafb;
+    top: 35px;
+    width: 500px;
+    border-radius: 30px;
+    background: linear-gradient(-225deg, #9d71f4 0%, #b15fc1 48%, #f887a8 100%);
 }
+/* .weather-summary { */
+/* position: relative; */
+/* right: 160px; */
+/* top: 15px; */
+/* color: #61dafb; */
+/* } */
 .date-time {
     margin-top: 0;
 }
 
 .temp {
     font-size: 50px;
-    color: blue;
 }
 .units {
     font-size: 20px;
     position: relative;
     top: -20px;
 }
-.summary-data {
-    font-size: 30px;
-    list-style-type: none;
-    position: relative;
-    right: -300px;
-    top: -190px;
-}
-.weather-table {
-    display: flex;
-}
-.weather-forecast {
-    margin-top: -60px;
-    margin-left: 150px;
-}
-
-.city-name {
-    margin-left: 30px;
-}
-.row-1 {
-    margin-left: 25px;
-}
-
-.row-2 {
-    margin-left: 30px;
-}
-.row-3 {
-    margin-left: 30px;
-}
-.row-4 {
-    margin-left: 30px;
-}
+/* .summary-data { */
+/* font-size: 30px; */
+/* list-style-type: none; */
+/* position: relative; */
+/* right: -300px; */
+/* top: -190px; */
+/* } */

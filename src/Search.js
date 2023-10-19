@@ -4,8 +4,9 @@ import "./Search.css";
 
 export default function Search() {
     return (
-        <div className="App">
+        <div className="Search">
             <div className="container">
+                <h1 className="city-name">Santa clara, CA</h1>
                 <form className="search-form">
                     <input
                         type="search"
@@ -15,7 +16,7 @@ export default function Search() {
                     <input
                         type="submit"
                         value="search"
-                        className="btn btn-primary"
+                        className="btn button "
                     />
                 </form>
             </div>
