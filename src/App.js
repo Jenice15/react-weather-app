@@ -13,7 +13,7 @@ function App() {
                     <div className="Wrapper">
                         <div className="container">
                             <Search />
-                            <WeatherSummary />
+                            <WeatherSummary city="New York" />
                             <WeatherForecast />
                         </div>
                     </div>
