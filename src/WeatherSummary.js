@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
+import FormattedDate from "./FormattedDate";
 import "./WeatherSummary.css";
 import ReactAnimatedWeather from "react-animated-weather";
 import Card from "react-bootstrap/Card";
@@ -9,9 +10,15 @@ export default function WeatherSummary(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
 
     function handleResponse(response) {
-        // console.log(response.data);
+        console.log(response.data);
         setWeatherData({
-            temperature: response.data.temperature,
+            temperature: response.data.temperature.current,
+            feelsLike: response.data.temperature.feels_like,
+            humidity: response.data.temperature.humidity,
+            wind: response.data.wind.speed,
+            date: new Date(response.data.time * 1000),
+
+            ready: true,
         });
     }
 
@@ -21,7 +28,7 @@ export default function WeatherSummary(props) {
                 <Card className="summary-card">
                     <Card.Body>
                         <div className="c-body">
-                            <div className="date-time">Tuesday 17 10:19AM</div>
+                            <FormattedDate date={weatherData.date} />
                             <br />
                             <ReactAnimatedWeather
                                 className="animated-icon"
@@ -31,7 +38,7 @@ export default function WeatherSummary(props) {
                                 animate="true"
                             />
                             <div className="temp">
-                                {weatherData.temperature}
+                                {Math.round(weatherData.temperature)}
                                 <span className="units">&deg;C/&deg;F</span>
                             </div>
                         </div>
@@ -40,9 +47,12 @@ export default function WeatherSummary(props) {
                 <Card className="summary-data-card">
                     <Card.Body>
                         <ul className="summary-data">
-                            <li>H:19&deg;</li>
-                            <li>L:5&deg;</li>
-                            <li>Real Feel 6&deg;</li>
+                            <li>
+                                Real Feel : {Math.round(weatherData.feelsLike)}{" "}
+                                C&deg;
+                            </li>
+                            <li>Humidity : {weatherData.humidity}%</li>
+                            <li>Wind : {Math.round(weatherData.wind)} mph</li>
                         </ul>
                     </Card.Body>
                 </Card>

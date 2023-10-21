@@ -10,13 +10,13 @@
     width: 235px;
     height: 200px;
     position: relative;
-    top: -160px;
+    top: -157px;
     left: 227px;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--primary-color);
 }
 .summary-data {
     list-style-type: none;
-    margin-left: -18px;
-    margin-top: 12px;
+    margin-left: -33px;
+    margin-top: 25px;
 }
