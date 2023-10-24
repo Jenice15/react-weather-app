@@ -1,6 +1,5 @@
 import "./App.css";
-
-import Search from "./Search";
+import Weather from "./Weather";
 import WeatherForecast from "./WeatherForecast";
 import WeatherSummary from "./WeatherSummary";
 import Card from "react-bootstrap/Card";
@@ -12,9 +11,9 @@ function App() {
                 <Card.Body>
                     <div className="Wrapper">
                         <div className="container">
-                            <Search />
-                            <WeatherSummary city="New York" />
-                            <WeatherForecast />
+                            <Weather city="New York" />
+                            {/* <WeatherSummary /> */}
+                            {/* <WeatherForecast /> */}
                         </div>
                     </div>
                 </Card.Body>
